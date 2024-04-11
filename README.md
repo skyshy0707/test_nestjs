@@ -23,8 +23,8 @@ Cервер принимает POST запрос на /api/v1/request, payload �
 
 
 ```
-docker copmpose build up -d --build
-docker compose up
+docker-compose up -d --build
+docker-compose up
 ```
 
 Ручная отладка:
