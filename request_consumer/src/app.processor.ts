@@ -1,9 +1,9 @@
 import { Job } from 'bull';
 import { 
+  OnQueueActive,
+  OnQueueCompleted,
   Processor, 
   Process, 
-  OnQueueActive,
-  OnQueueCompleted
 } from '@nestjs/bull';
 import { plainToClass } from 'class-transformer';
 import { ResponseScheme } from './app.schemes';

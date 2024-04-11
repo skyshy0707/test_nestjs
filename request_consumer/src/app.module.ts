@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { BullModule } from '@nestjs/bull';
 import { RequestController } from './app.controller';
-import { RequestService } from './app.service';
-import { RequestConsumer } from './app.processor';
 import { MyLogger } from  './app.logger'
+import { RequestConsumer } from './app.processor';
+import { RequestService } from './app.service';
 
 const environment = process.env
 const {
