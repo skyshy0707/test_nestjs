@@ -21,10 +21,10 @@ python test2.py
 Убедиться, что статус ответа выводится с кодом 201.
 
 ```
-для python test.py
+для python test.py:
 STATUS_CODE 201 REASON Created TEXT {"answer":"Hi!"} JSON {'answer': 'Hi!'}
 
-для python test2.py
+для python test2.py:
 STATUS_CODE 201 REASON Created TEXT {"answer":"Hey!"} JSON {'answer': 'Hey!'}
 ```
 
