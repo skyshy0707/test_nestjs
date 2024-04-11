@@ -6,7 +6,8 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
     bufferLogs: true
   });
-  app.useLogger(app.get(MyLogger))
+  app.setGlobalPrefix('api/v1');
+  app.useLogger(app.get(MyLogger));
   await app.listen(3000);
 }
 bootstrap();
