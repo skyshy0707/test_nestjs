@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    command: npm run start
+    expose:
+      - 3000
+    env_file:
+      ./request_consumer/src/.env 
+    ports:
+      - 3000:3000
+    depends_on:
+      - redis
+  redis:
+    restart: unless-stopped
+    image: redis:6.2.12
+    #env_file:
+    #  ./src/.env 
+    expose: 
+      - 6379
